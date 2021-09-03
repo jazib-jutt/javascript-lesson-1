@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .input-field{
+
+                border: 1px solid brown;
+                font-size: 10px;
+                color: black;
+                padding: 5px;
+                margin: 10px;;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+
+<body>
+    <p>
+    <p> my name is jazib</p>
+    <p> iam pubG pl</p>
+    </p>
+    <h1>
+        heading1
+    </h1>
+    <h4>
+        heading4
+    </h4>
+    <b>
+        jazib in bold
+    </b>
+    <p>
+        unorder list
+    </p>
+    <ul>
+        <li class="input-field">
+            bmw
+        </li>
+        <li>
+            honda
+        </li>
+    </ul>
+    <p>
+        order list
+    </p>
+    <ol>
+        <li>
+            honda
+        </li>
+        <li>
+            bmw
+        </li>
+    </ol></br>
+    <table style="border:6px aqua dashed">
+        <thead>
+            <tr>
+                <th>
+                    first name
+                </th>
+                <th>
+                    age
+                </th>
+                <th>
+                    phone no
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    jazib
+                </td>
+                <td>
+                    22
+                </td>
+                <td>
+                    95466547
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <span>inline element</span>
+    <span>inline element</span>
+    <span>inline element</span>
+
+    <div>
+        block elment
+    </div>
+
+    <div style="width: 500px; display:inline-block">
+        <div style="width: 200px; height: 100px; border: 1px solid black;">
+            block elment
+        </div>
+        <div style="border: 1px solid black; width: 200px; height: 100px;">
+            block elment
+        </div>
+    </div>
+    <form>
+        <label>name
+        </label>
+        <input class="input-field" type="text" id="name" placeholder="enter name" />
+        <label>
+            roll no
+        </label>
+        <input type="number" id="rollno" placeholder="enter rollno" />
+        <input type="button" value="button" onclick="getStudent()" />
+        <button>
+            cancel
+        </button>
+    </form>
+    <p>Name: <b id="std-name"></b></p>
+    <p>RollNo: 
+        <span id="std-rollno"></span>
+    </p>
+    <img src="Capture.PNG">
+    <script>
+
+        function getStudent() {
+            const nameInput = document.getElementById("name");
+            const rollInput = document.getElementById("rollno");
+
+            document.getElementById("std-name").innerText = nameInput.value;
+            // document.getElementById("std-name").innerText = nameInput.value;
+            document.getElementById("std-rollno").innerHTML = '<b>'+rollInput.value+'</b>';
+            // alert("Wellcome "+ nameInput.value + " rollno:  "+ rollInput.value);            
+        }
+    </script>
+
+</body>
+
+</html>
